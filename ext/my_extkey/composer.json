@@ -1,0 +1,24 @@
+{
+    "name": "myvendor/my-extkey",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [],
+    "version": "1.0.0",
+    "require": {
+        "typo3/cms-core": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "MyVendor\\MyExtkey\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MyVendor\\MyExtkey\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "my_extkey": "self.version",
+        "typo3-ter/my-extkey": "self.version"
+    }
+}

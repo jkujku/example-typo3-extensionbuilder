@@ -1,0 +1,48 @@
+
+config.tx_extbase {
+  persistence {
+    classes {
+
+      MyVendor\MyExtkey\Domain\Model\MyParentClass {
+        subclasses {
+          Tx_MyExtkey_MyChildClass = MyVendor\MyExtkey\Domain\Model\MyChildClass
+          
+        }
+      }
+      MyVendor\MyExtkey\Domain\Model\MyChildClass {
+        subclasses {
+          Tx_MyExtkey_MyChildsChildClass = MyVendor\MyExtkey\Domain\Model\MyChildsChildClass
+          
+        }
+      }
+      MyVendor\MyExtkey\Domain\Model\MyChildClass {
+        mapping {
+          tableName = tx_myextkey_domain_model_myparentclass
+          recordType = Tx_MyExtkey_MyChildClass
+        }
+      }
+
+      MyVendor\MyExtkey\Domain\Model\MyChildsChildClass {
+        mapping {
+          tableName = tx_myextkey_domain_model_myparentclass
+          recordType = Tx_MyExtkey_MyChildsChildClass
+        }
+      }
+
+    }
+  }
+}
+
+## EXTENSION BUILDER DEFAULTS END TOKEN - Everything BEFORE this line is overwritten with the defaults of the extension builder
+config.tx_extbase {
+	persistence {
+		classes {
+			MyVendor\MyExtkey\Domain\Model\MyParentClass {
+				mapping {
+					tableName = tx_myextkey_domain_model_myparentclass
+					recordType = Tx_MyExtkey_MyParentClass
+				}
+			}
+		}
+	}
+}

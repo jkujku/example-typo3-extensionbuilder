@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-02-12T15:04:41Z" product-name="my_extkey">
+		<header/>
+		<body>
+			<trans-unit id="sub_sub_title.description">
+				<source>subSubTitle</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
