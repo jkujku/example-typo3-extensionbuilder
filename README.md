@@ -3,8 +3,10 @@ How to use TYPO3 extension_builder with Class Inheritance.
 
 * Extbase
 * Single Table Inheritance
+* Extension Builder
+* Example and Tutorial
 
-[See the tutorial](https://github.com/jkujku/example-typo3-extensionbuilder/wiki)
+[--> See the tutorial](https://github.com/jkujku/example-typo3-extensionbuilder/wiki)
 
 
 
